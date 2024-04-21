@@ -10,4 +10,7 @@ public class NextScene : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(1);
     }
+    public void GoBack(){
+        SceneManager.LoadSceneAsync(0);
+    }
 }

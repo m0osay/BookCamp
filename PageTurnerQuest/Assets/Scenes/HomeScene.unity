@@ -308,7 +308,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PageQuest
+  m_text: BookCamp
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -490,7 +490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicSource: {fileID: 132004287}
-  background: {fileID: 8300000, guid: 556dbdf2ae8152545aa47fd1dbc0e312, type: 3}
+  background: {fileID: 8300000, guid: ee6f57d5598d98b4fac538cff1a0554a, type: 3}
 --- !u!4 &862311903
 Transform:
   m_ObjectHideFlags: 0
