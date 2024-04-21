@@ -11,11 +11,13 @@ public class TimerButtonStates : MonoBehaviour
     public Text timerText;
     public float time;
     public bool running;
+    public Animator character;
     System.TimeSpan timeSpan;
     // Start is called before the first frame update
     void Start()
     {
         state = States.START;
+        character.StartPlayback();
     }
 
     // Update is called once per frame
@@ -34,10 +36,12 @@ public class TimerButtonStates : MonoBehaviour
         switch (state)
         {
             case States.START:
+                character.StopPlayback();
                 state = States.READ;
                 buttonText.text = "Stop";
                 break;
             case States.READ:
+                character.StartPlayback();
                 state = States.STOP;
                 buttonText.text = "Reset";
                 break;
@@ -46,6 +50,8 @@ public class TimerButtonStates : MonoBehaviour
                 time = 0f;
                 timerText.text = "00:00:00";
                 buttonText.text = "Read!";
+                
+                
                 break;
             case States.RESET:
                 state = States.START;
